@@ -37,7 +37,7 @@ npm run dev
 
 ### GitHub Pages
 
-Para probar la simulación en GitHub Pages basta con subir el contenido del repositorio y utilizar `main.html` como archivo de entrada. De esta forma podrás ver la demo sin necesidad de un servidor Node.
+Para probar la simulación en GitHub Pages basta con subir el contenido del repositorio y utilizar `index.html` como archivo de entrada. De esta forma podrás ver la demo sin necesidad de un servidor Node.
 
 ## ¿Qué se puede hacer?
 

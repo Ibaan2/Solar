@@ -18,6 +18,7 @@
     let addMode = false;      // Si true, toques agregan cuerpos
     let showOrbits = true;
     let showTrails = true;
+    let showAxes = true;
     const axisHelper = new THREE.AxesHelper(300); // Ejes X/Y/Z
 
     // Mapa de inclinaciones reales aproximadas de órbitas (en grados)
@@ -360,6 +361,7 @@
 
       // Ejes XYZ
       scene.add(axisHelper);
+      axisHelper.visible = showAxes;
 
       // Luces
       const ambient = new THREE.AmbientLight(0x222222);
@@ -1102,6 +1104,14 @@
         link.href = renderer.domElement.toDataURL('image/png');
         link.download = 'screenshot.png';
         link.click();
+      });
+
+      const axesBtn = document.getElementById('toggleAxesBtn');
+      axesBtn.addEventListener('click', () => {
+        showAxes = !showAxes;
+        axesBtn.classList.toggle('active');
+        axesBtn.textContent = showAxes ? 'Ocultar Ejes' : 'Mostrar Ejes';
+        axisHelper.visible = showAxes;
       });
     }
 
