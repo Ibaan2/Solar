@@ -1095,6 +1095,14 @@
       zoomFitBtn.addEventListener('click', () => {
         zoomFitAll();
       });
+
+      const screenshotBtn = document.getElementById('screenshotBtn');
+      screenshotBtn.addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.href = renderer.domElement.toDataURL('image/png');
+        link.download = 'screenshot.png';
+        link.click();
+      });
     }
 
     ////////////////////////////////////////////

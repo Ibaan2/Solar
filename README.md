@@ -35,6 +35,10 @@ npm run dev
 
 (corre el servidor con `nodemon` y recarga automáticamente al cambiar `server.js`).
 
+### GitHub Pages
+
+Para probar la simulación en GitHub Pages basta con subir el contenido del repositorio y utilizar `main.html` como archivo de entrada. De esta forma podrás ver la demo sin necesidad de un servidor Node.
+
 ## ¿Qué se puede hacer?
 
 - Explorar el sistema solar con rotación, zoom y paneo.
