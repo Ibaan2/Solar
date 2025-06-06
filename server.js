@@ -6,7 +6,7 @@ app.use(express.static(__dirname));
 
 // Serve main HTML file at root for convenience
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/main.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port, () => {
